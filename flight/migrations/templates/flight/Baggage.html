@@ -1,0 +1,26 @@
+{% extends 'flight/layout.html' %}
+
+{% load static %}
+
+{% block head %}
+    <title>Terms and Conditions | Flight</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/privacy-policy.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock head %}
+
+{% block body %}
+    <section class="privacybanner-section">
+        <img src="./../../static/img/place/bag.png" alt="Privacy Policy" class="privacybannerimg">
+    </section>
+    <section class="section section1">
+        <div class="container">
+            <h1>Baggage allowance</h1>
+            
+                
+            <p> When you fly, there are limits to the weight and/or number of pieces of baggage you can check in or carry on board. Certain limitations and restrictions also apply, and these may differ by country and airline. Your check-in and cabin baggage may also be subjected to security measures mandated by the relevant authorities.
+                
+                Since you won’t have access to baggage that you have checked in, we recommend that you carry all your travel documents, medication and valuables in your cabin baggage, which will be with you throughout your flight. You should also remember to label your checked baggage with your name and contact information.
+                </p>
+        </div>
+    </section>
+{% endblock%}

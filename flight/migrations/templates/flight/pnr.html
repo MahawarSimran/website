@@ -1,0 +1,73 @@
+{% extends 'flight/layout.html' %}
+{% load static %}
+
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .containernew {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #f1e9e9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(173, 123, 123, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #8d4545;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="containernew">
+        <h2>Please enter your PNR number</h2>
+        <form action="{% url 'pnrfun' %}" method="post">
+            {% csrf_token %}
+            <label for="city1">PNR number:</label>
+            <input type="text" id="city1" name="pnrnum" placeholder="Enter number">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+{% endblock %}

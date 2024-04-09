@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a504ef739d07fa7b1f051f81795ee9db {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a504ef739d07fa7b1f051f81795ee9db" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a504ef739d07fa7b1f051f81795ee9db = L.map(
+                "map_a504ef739d07fa7b1f051f81795ee9db",
+                {
+                    center: [25.6093239, 85.1235252],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bcbc5f60f2fda0079cdfdb37b076a284 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bcbc5f60f2fda0079cdfdb37b076a284.addTo(map_a504ef739d07fa7b1f051f81795ee9db);
+        
+    
+            var marker_f5b04af4e5d9af463313b92f5e099a47 = L.marker(
+                [25.6093239, 85.1235252],
+                {}
+            ).addTo(map_a504ef739d07fa7b1f051f81795ee9db);
+        
+    
+        var popup_6647eb9cc882a14aab814a4141d983c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c34ca5c98826f09e35d258c11f20900f = $(`<div id="html_c34ca5c98826f09e35d258c11f20900f" style="width: 100.0%; height: 100.0%;">patna</div>`)[0];
+                popup_6647eb9cc882a14aab814a4141d983c2.setContent(html_c34ca5c98826f09e35d258c11f20900f);
+            
+        
+
+        marker_f5b04af4e5d9af463313b92f5e099a47.bindPopup(popup_6647eb9cc882a14aab814a4141d983c2)
+        ;
+
+        
+    
+    
+            var marker_2f1baa2a92526cab8bc88b6eff00cf04 = L.marker(
+                [22.5726459, 88.3638953],
+                {}
+            ).addTo(map_a504ef739d07fa7b1f051f81795ee9db);
+        
+    
+        var popup_4b7b0383277a5d7c2444fc0e018d5fc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8905c6904cc2fc37572cccd5e0993f9a = $(`<div id="html_8905c6904cc2fc37572cccd5e0993f9a" style="width: 100.0%; height: 100.0%;">kolkata</div>`)[0];
+                popup_4b7b0383277a5d7c2444fc0e018d5fc8.setContent(html_8905c6904cc2fc37572cccd5e0993f9a);
+            
+        
+
+        marker_2f1baa2a92526cab8bc88b6eff00cf04.bindPopup(popup_4b7b0383277a5d7c2444fc0e018d5fc8)
+        ;
+
+        
+    
+    
+            var poly_line_9375503a4a7961616273daa27a651f71 = L.polyline(
+                [[25.6093239, 85.1235252], [22.5726459, 88.3638953]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_a504ef739d07fa7b1f051f81795ee9db);
+        
+</script>
+</html>
